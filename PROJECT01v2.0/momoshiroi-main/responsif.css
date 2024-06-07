@@ -1,0 +1,202 @@
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+
+  .section-title {
+    font-size: 2rem;
+    margin: 0.6rem 0 2.5rem;
+  }
+
+  :root {
+    --section-padding: 2rem 0;
+    --primary-bg-color: #271f58;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+  }
+
+
+  /* Navbar */
+  .nav-links {
+    position: fixed;
+    width: 30%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-bg-color);
+    opacity: 0.9; 
+    border-left: 1px solid var(--hover-color);
+    z-index: 9;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .nav-links ul {
+    display: flex; 
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav-links li{
+    padding: 2rem;
+
+  }
+  
+  .nav-links.active {
+    transform: translateX(0);
+  }
+  
+  .menu-icon {
+    display: block;
+    z-index: 20; /* Ensure it's clickable above other elements */
+  }
+  
+
+  /* Hero Section */
+  #hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    height: auto;
+  }
+  
+  .hero-kanan,
+  .hero-kiri {
+    margin-top: 20px;
+  }
+  
+  .hero-name,
+  .hero-p {
+    font-size: 3rem;
+  }
+  
+  .hero-p {
+    font-size: 0.8rem;
+  }
+  
+  .hero-kiri {
+    text-align: right;
+  }
+  
+  .hero-kanan {
+    text-align: left;
+  }
+  
+  .hero-kiri img {
+    width: 70%;
+    display: block;
+    margin: 0 auto; /* Mengatur gambar ke tengah */
+  }
+  
+  
+  /* About section */
+  #about-section {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .about-description {
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 10px;
+  }
+
+  /* Events Section */
+
+  #events {
+    align-items: center;
+    text-align: center;
+  }
+  .grid-4 {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 0.5rem;
+  }
+
+  .caption {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: calc(100% - 5px);
+  }
+
+  /* Founders Section */
+  #founders {
+   display:none;
+  }
+  /* Slider */
+  .slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid var(--secondary-bg-color);
+  }
+
+  /* Contact Section */
+
+#contact {
+  background-color: var(--primary-bg-color);
+}
+
+.contact {
+  margin:1rem;
+}
+
+  .contact-content {
+    margin-top: none;
+    text-align: center;
+    align-items: center;
+  }
+
+  .contact-content h2 {
+    margin: 1rem;
+  }
+
+  .contact-content p{
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-size: small;
+    text-align: left;
+  }
+
+
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 1rem;
+    background-color: var(--secondary-bg-color);
+  }
+
+  .submit-button {
+    font-size: 0.9rem;
+    background-color: var(--secondary-bg-color);
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+
+/* Footer */
+footer {
+  background-color: var(--primary-bg-color);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+}
